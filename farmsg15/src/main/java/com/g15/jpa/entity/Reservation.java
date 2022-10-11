@@ -28,7 +28,7 @@ public class Reservation implements Serializable {//inicio de la clase
 
     @ManyToOne
     @JoinColumn(name = "farm_id")
-    @JsonIgnoreProperties({"reservations", "messages"})
+    @JsonIgnoreProperties({"reservations"})
     private Farm farm;
 
     //client
